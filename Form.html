@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* Style the form - display items horizontally */
+        .form-inline {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+        /* Add some margins for each label */
+        .form-inline label {
+            margin: 5px 10px 5px 0;
+        }
+        /* Style the input fields */
+        .form-inline input {
+            vertical-align: middle;
+            margin: 5px 10px 5px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        /* Style the submit button */
+        .form-inline button {
+            padding: 10px 20px;
+            background-color: dodgerblue;
+            border: 1px solid #ddd;
+            color: white;
+        }
+        .form-inline button:hover {
+            background-color: royalblue;
+        }
+        /* Add responsiveness - display the form controls vertically on smaller screens */
+        @media (max-width: 800px) {
+            .form-inline input {
+                margin: 10px 0;
+            }
+            .form-inline {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+    
+<h3>Registration Form</h3>
+
+<form action="#" method="post">
+    <!-- First Name -->
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="First Name"><br><br>
+
+    <!-- Middle Name -->
+    <label for="middleName">Middle Name:</label>
+    <input type="text" id="middleName" name="middleName" placeholder="Middle Name"><br><br>
+
+    <!-- Last Name -->
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Last Name"><br><br>
+
+    <!-- Course Dropdown -->
+    <label for="course">Course:</label>
+    <select id="course" name="course">
+        <option value="">Select</option>
+        <option value="fullStackFullTime">Full Stack Full Time</option>
+        <option value="fullStackPartTime">Full Stack Part Time</option>
+        <option value="projectManagement">Project Management</option>
+        <option value="digitalMarketing">Digital Marketing</option>
+    </select><br><br>
+
+    <!-- Date of Birth Fields -->
+    <label for="dob">Date of Birth:</label>
+    <select id="day" name="day" >
+        <option value="Day">Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <!-- Populate with days (1-31) -->
+    </select>
+    <select id="month" name="month">
+        <option value="Month">Month</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <!-- Populate with months (January-December) -->
+    </select>
+    <select id="year" name="year">
+        <option value="Year">Year</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <!-- Populate with years -->
+    </select><br><br>
+
+    <!-- Gender Radio Buttons -->
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Phone Number Fields -->
+    <label for="phone">Phone:</label>
+    <input type="text" id="countryCode" name="countryCode" value="+94" size="2">
+    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"><br><br>
+
+    <!-- District Dropdown -->
+    <label for="district">District:</label>
+    <select id="district" name="district">
+        <option value="">Select</option>
+        <option value="Jaffna">Jaffna</option>
+        <option value="Kilinochi">Kilinochi</option>
+        <option value="Vavuniya">Vavuniya</option>
+        <option value="Mannar">Mannar</option>
+    </select><br><br>
+
+    <!-- Email Field -->
+    <label for="email" style="margin-right: 10px;">Email:</label>
+    <input type="email" id="email" placeholder="Enter email" name="email" style="padding: 10px; background-color: #fff; border: 1px solid #ddd;">
+
+
+    <!-- Password Fields -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter Password"><br><br>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register">
+</form>
+
+</body>
+</html>
+
